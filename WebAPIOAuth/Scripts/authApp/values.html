@@ -1,0 +1,7 @@
+﻿<div ng-show="errorGettingValues" class="alert-danger">
+    <p>Getting values form server failed with status code: {{errorCode}}</p>
+</div>
+<h3>Values:</h3>
+<ul ng-repeat="value in values">
+    <li>{{ value }}</li>
+</ul>
