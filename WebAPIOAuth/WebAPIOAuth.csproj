@@ -269,6 +269,7 @@
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\authApp\authApp.js" />
     <Content Include="Scripts\authApp\home.html" />
+    <Content Include="Scripts\authApp\login.html" />
     <Content Include="Scripts\authApp\values.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
