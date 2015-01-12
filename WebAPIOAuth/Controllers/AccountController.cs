@@ -357,7 +357,11 @@ namespace WebAPIOAuth.Controllers
                 return InternalServerError();
             }
 
-            var user = new ApplicationUser() { UserName = model.Email, Email = model.Email };
+            var user = new ApplicationUser()
+            {
+                UserName = model != null ? model.Email : info.DefaultUserName,
+                Email = model != null ? model.Email : info.Email
+            };
 
             IdentityResult result = await UserManager.CreateAsync(user);
             if (!result.Succeeded)
